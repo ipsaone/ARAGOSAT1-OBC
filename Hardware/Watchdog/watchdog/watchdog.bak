@@ -1,0 +1,432 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega32-16PU U1
+U 1 1 5C0E003E
+P 1350 2800
+F 0 "U1" H 1350 714 50  0000 C CNN
+F 1 "ATmega32-16PU" H 1250 2800 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 1350 2800 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc2503.pdf" H 1350 2800 50  0001 C CNN
+	1    1350 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega32-16PU U2
+U 1 1 5C0E009C
+P 2900 2800
+F 0 "U2" H 2900 714 50  0000 C CNN
+F 1 "ATmega32-16PU" H 2800 2800 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 2900 2800 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc2503.pdf" H 2900 2800 50  0001 C CNN
+	1    2900 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega32-16PU U3
+U 1 1 5C0E0104
+P 4450 2800
+F 0 "U3" H 4450 714 50  0000 C CNN
+F 1 "ATmega32-16PU" H 4400 2800 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 4450 2800 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc2503.pdf" H 4450 2800 50  0001 C CNN
+	1    4450 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx_IEEE:7408 U4
+U 1 1 5C0E019B
+P 6650 2000
+F 0 "U4" H 6650 2416 50  0000 C CNN
+F 1 "7408" H 6650 2325 50  0000 C CNN
+F 2 "" H 6650 2000 50  0001 C CNN
+F 3 "" H 6650 2000 50  0001 C CNN
+	1    6650 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx_IEEE:7408 U4
+U 2 1 5C0E0234
+P 6650 2700
+F 0 "U4" H 6650 3116 50  0000 C CNN
+F 1 "7408" H 6650 3025 50  0000 C CNN
+F 2 "" H 6650 2700 50  0001 C CNN
+F 3 "" H 6650 2700 50  0001 C CNN
+	2    6650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx_IEEE:7408 U4
+U 3 1 5C0E0293
+P 6700 3350
+F 0 "U4" H 6700 3766 50  0000 C CNN
+F 1 "7408" H 6700 3675 50  0000 C CNN
+F 2 "" H 6700 3350 50  0001 C CNN
+F 3 "" H 6700 3350 50  0001 C CNN
+	3    6700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xGxx:74LVC2G32 U6
+U 1 1 5C0E0316
+P 8000 2350
+F 0 "U6" H 7975 2617 50  0000 C CNN
+F 1 "74LVC2G32" H 7975 2526 50  0000 C CNN
+F 2 "" H 8000 2350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 8000 2350 50  0001 C CNN
+	1    8000 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xGxx:74LVC2G32 U6
+U 2 1 5C0E0375
+P 8000 3100
+F 0 "U6" H 7975 3367 50  0000 C CNN
+F 1 "74LVC2G32" H 7975 3276 50  0000 C CNN
+F 2 "" H 8000 3100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 8000 3100 50  0001 C CNN
+	2    8000 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 700  6300 700 
+Wire Wire Line
+	6300 900  7800 900 
+Wire Wire Line
+	7800 1100 6300 1100
+Wire Wire Line
+	6300 1300 7800 1300
+Text GLabel 6300 1300 0    50   Input ~ 0
+WD_SS
+Text GLabel 6300 1100 0    50   Input ~ 0
+WD_MISO
+Text GLabel 6300 900  0    50   Input ~ 0
+WD_MOSI
+Text GLabel 6300 700  0    50   Input ~ 0
+WD_SCK
+Text Label 7800 700  0    50   ~ 0
+SCK
+Text Label 7800 900  0    50   ~ 0
+MOSI
+Text Label 7800 1100 0    50   ~ 0
+MISO
+Text Label 7800 1300 0    50   ~ 0
+SS
+Text Label 5050 2500 0    50   ~ 0
+SCK
+Text Label 3500 2500 0    50   ~ 0
+SCK
+Text Label 1950 2500 0    50   ~ 0
+SCK
+Text Label 5050 2400 0    50   ~ 0
+MISO
+Text Label 3500 2400 0    50   ~ 0
+MISO
+Text Label 1950 2400 0    50   ~ 0
+MISO
+Text Label 5050 2300 0    50   ~ 0
+MOSI
+Text Label 5050 2200 0    50   ~ 0
+SS
+Text Label 3500 2300 0    50   ~ 0
+MOSI
+Text Label 3500 2200 0    50   ~ 0
+SS
+Text Label 1950 2300 0    50   ~ 0
+MOSI
+Text Label 1950 2200 0    50   ~ 0
+SS
+Text Label 1950 1100 0    50   ~ 0
+PWR_0
+Text Label 3500 1100 0    50   ~ 0
+PWR_1
+Text Label 5050 1100 0    50   ~ 0
+PWR_2
+Text Label 6100 1900 2    50   ~ 0
+PWR_0
+Text Label 6100 2100 2    50   ~ 0
+PWR_1
+Text Label 6100 2600 2    50   ~ 0
+PWR_1
+Text Label 6150 3450 2    50   ~ 0
+PWR_0
+Text Label 6100 2800 2    50   ~ 0
+PWR_2
+Text Label 6150 3250 2    50   ~ 0
+PWR_2
+Wire Wire Line
+	7200 2000 7700 2000
+Wire Wire Line
+	7700 2000 7700 2300
+Wire Wire Line
+	7200 2700 7700 2700
+Wire Wire Line
+	7700 2700 7700 2400
+Wire Wire Line
+	7250 3350 7700 3350
+Wire Wire Line
+	7700 3350 7700 3150
+Wire Wire Line
+	8250 2350 8250 2800
+Wire Wire Line
+	8250 2800 7700 2800
+Wire Wire Line
+	7700 2800 7700 3050
+Text Label 8250 3100 0    50   ~ 0
+PWR_CONSENSUS
+Text Label 1950 1200 0    50   ~ 0
+CPU_0
+Text Label 3500 1200 0    50   ~ 0
+CPU_1
+Text Label 5050 1200 0    50   ~ 0
+CPU_2
+$Comp
+L 74xx_IEEE:7408 U4
+U 4 1 5C0E38CE
+P 6700 4150
+F 0 "U4" H 6700 4566 50  0000 C CNN
+F 1 "7408" H 6700 4475 50  0000 C CNN
+F 2 "" H 6700 4150 50  0001 C CNN
+F 3 "" H 6700 4150 50  0001 C CNN
+	4    6700 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx_IEEE:7408 U5
+U 1 1 5C0E38D5
+P 6700 4850
+F 0 "U5" H 6700 5266 50  0000 C CNN
+F 1 "7408" H 6700 5175 50  0000 C CNN
+F 2 "" H 6700 4850 50  0001 C CNN
+F 3 "" H 6700 4850 50  0001 C CNN
+	1    6700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx_IEEE:7408 U5
+U 2 1 5C0E38DC
+P 6750 5500
+F 0 "U5" H 6750 5916 50  0000 C CNN
+F 1 "7408" H 6750 5825 50  0000 C CNN
+F 2 "" H 6750 5500 50  0001 C CNN
+F 3 "" H 6750 5500 50  0001 C CNN
+	2    6750 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xGxx:74LVC2G32 U7
+U 1 1 5C0E38E3
+P 8050 4500
+F 0 "U7" H 8025 4767 50  0000 C CNN
+F 1 "74LVC2G32" H 8025 4676 50  0000 C CNN
+F 2 "" H 8050 4500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 8050 4500 50  0001 C CNN
+	1    8050 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xGxx:74LVC2G32 U7
+U 2 1 5C0E38EA
+P 8050 5250
+F 0 "U7" H 8025 5517 50  0000 C CNN
+F 1 "74LVC2G32" H 8025 5426 50  0000 C CNN
+F 2 "" H 8050 5250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 8050 5250 50  0001 C CNN
+	2    8050 5250
+	1    0    0    -1  
+$EndComp
+Text Label 6150 4050 2    50   ~ 0
+CPU_0
+Text Label 6150 4250 2    50   ~ 0
+CPU_1
+Text Label 6150 4750 2    50   ~ 0
+CPU_1
+Text Label 6200 5600 2    50   ~ 0
+CPU_0
+Text Label 6150 4950 2    50   ~ 0
+CPU_2
+Text Label 6200 5400 2    50   ~ 0
+CPU_2
+Wire Wire Line
+	7250 4150 7750 4150
+Wire Wire Line
+	7750 4150 7750 4450
+Wire Wire Line
+	7250 4850 7750 4850
+Wire Wire Line
+	7750 4850 7750 4550
+Wire Wire Line
+	7300 5500 7750 5500
+Wire Wire Line
+	7750 5500 7750 5300
+Wire Wire Line
+	8300 4500 8300 4950
+Wire Wire Line
+	8300 4950 7750 4950
+Wire Wire Line
+	7750 4950 7750 5200
+Text Label 8300 5250 0    50   ~ 0
+CPU_CONSENSUS
+$Comp
+L power:+5V #PWR0101
+U 1 1 5C0E4558
+P 1350 800
+F 0 "#PWR0101" H 1350 650 50  0001 C CNN
+F 1 "+5V" H 1365 973 50  0000 C CNN
+F 2 "" H 1350 800 50  0001 C CNN
+F 3 "" H 1350 800 50  0001 C CNN
+	1    1350 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5C0E4584
+P 2900 800
+F 0 "#PWR0102" H 2900 650 50  0001 C CNN
+F 1 "+5V" H 2915 973 50  0000 C CNN
+F 2 "" H 2900 800 50  0001 C CNN
+F 3 "" H 2900 800 50  0001 C CNN
+	1    2900 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5C0E45A9
+P 4450 800
+F 0 "#PWR0103" H 4450 650 50  0001 C CNN
+F 1 "+5V" H 4465 973 50  0000 C CNN
+F 2 "" H 4450 800 50  0001 C CNN
+F 3 "" H 4450 800 50  0001 C CNN
+	1    4450 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5C0E45CE
+P 1450 800
+F 0 "#PWR0104" H 1450 650 50  0001 C CNN
+F 1 "+5V" H 1465 973 50  0000 C CNN
+F 2 "" H 1450 800 50  0001 C CNN
+F 3 "" H 1450 800 50  0001 C CNN
+	1    1450 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 5C0E45F3
+P 3000 800
+F 0 "#PWR0105" H 3000 650 50  0001 C CNN
+F 1 "+5V" H 3015 973 50  0000 C CNN
+F 2 "" H 3000 800 50  0001 C CNN
+F 3 "" H 3000 800 50  0001 C CNN
+	1    3000 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 5C0E4618
+P 4550 800
+F 0 "#PWR0106" H 4550 650 50  0001 C CNN
+F 1 "+5V" H 4565 973 50  0000 C CNN
+F 2 "" H 4550 800 50  0001 C CNN
+F 3 "" H 4550 800 50  0001 C CNN
+	1    4550 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5C0E4724
+P 4450 4800
+F 0 "#PWR0107" H 4450 4550 50  0001 C CNN
+F 1 "GND" H 4455 4627 50  0000 C CNN
+F 2 "" H 4450 4800 50  0001 C CNN
+F 3 "" H 4450 4800 50  0001 C CNN
+	1    4450 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5C0E4750
+P 2900 4800
+F 0 "#PWR0108" H 2900 4550 50  0001 C CNN
+F 1 "GND" H 2905 4627 50  0000 C CNN
+F 2 "" H 2900 4800 50  0001 C CNN
+F 3 "" H 2900 4800 50  0001 C CNN
+	1    2900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5C0E4775
+P 1350 4800
+F 0 "#PWR0109" H 1350 4550 50  0001 C CNN
+F 1 "GND" H 1355 4627 50  0000 C CNN
+F 2 "" H 1350 4800 50  0001 C CNN
+F 3 "" H 1350 4800 50  0001 C CNN
+	1    1350 4800
+	1    0    0    -1  
+$EndComp
+Text Label 2900 5900 2    50   ~ 0
+PWR_CONSENSUS
+$Comp
+L 74xGxx:74AHC1G04 U?
+U 1 1 5C0E6498
+P 3500 6450
+F 0 "U?" V 3521 6320 50  0000 R CNN
+F 1 "74AHC1G04" V 3430 6320 50  0000 R CNN
+F 2 "" H 3500 6450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 3500 6450 50  0001 C CNN
+	1    3500 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q?
+U 1 1 5C0E6773
+P 3500 6000
+F 0 "Q?" V 3828 6000 50  0000 C CNN
+F 1 "2N2219" V 3737 6000 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 3700 5925 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 3500 6000 50  0001 L CNN
+	1    3500 6000
+	0    -1   -1   0   
+$EndComp
+Text Label 3500 6750 0    50   ~ 0
+CPU_CONSENSUS
+$Comp
+L Transistor_BJT:2N2219 Q?
+U 1 1 5C0E73C6
+P 2850 6450
+F 0 "Q?" H 3041 6496 50  0000 L CNN
+F 1 "2N2219" H 3041 6405 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 3050 6375 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 2850 6450 50  0001 L CNN
+	1    2850 6450
+	1    0    0    -1  
+$EndComp
+Text Label 2650 6450 2    50   ~ 0
+CPU_CONSENSUS
+Text GLabel 3700 5900 2    50   Input ~ 0
+CPU0_VCC
+Text GLabel 2950 6650 3    50   Input ~ 0
+CPU1_VCC
+Wire Wire Line
+	2950 5900 3300 5900
+Wire Wire Line
+	2950 5900 2950 6250
+Wire Wire Line
+	2950 5900 2900 5900
+Connection ~ 2950 5900
+$EndSCHEMATC
