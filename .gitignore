@@ -1,1 +1,4 @@
 emulator/2020-02-13-raspbian-buster-lite.img
+devenv/.vagrant/bundler/global.sol
+devenv/.vagrant/machines/default/virtualbox/vagrant_cwd
+devenv/.vagrant/rgloader/loader.rb

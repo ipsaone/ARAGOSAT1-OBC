@@ -5,6 +5,8 @@
 #-hda ./2020-02-13-raspbian-buster-lite.img \
 #-append "root=/dev/mmcblk0p2 rootfstype=ext4 rootwait rw" \
 
+# DOWNLOAD RASPBIAN FROM https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2020-02-14/
+
 qemu-system-arm -M raspi2 -cpu cortex-a7 \
 		-dtb ./bcm2709-rpi-2-b.dtb \
 		-hda ./2020-02-13-raspbian-buster-lite.img \
